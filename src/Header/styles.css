@@ -1,0 +1,35 @@
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FFF;
+    border-bottom: 0.1px solid lightgray;
+    padding: 12px 0px;
+    width: 100%;
+    z-index: 9999;
+}
+
+.header__left{
+    display: flex;
+}
+
+.header__search{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    border-radius: 5px;
+    height: 22px;
+    color: gray;
+    background-color: #EEF3F8;
+}
+
+.header__left > img {
+    object-fit: contain;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header__right{
+    display: flex;
+}
