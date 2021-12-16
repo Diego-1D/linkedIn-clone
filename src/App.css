@@ -1,0 +1,9 @@
+.app {
+    background-color: #F3F2EF;
+    display: flex;
+    flex-direction: column;
+}
+
+.app__body{
+    display: flex;
+}
