@@ -3,10 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
 import Login from './components/Login';
 import { login, logout, selectUser } from './features/userSlice';
-import Feed from './Feed';
+import Feed from './components/Feed';
 import { auth } from './firebase';
-import Header from './Header';
-import Sidebar from './Sidebar';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import Widgets from './components/Widgets';
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
           <div className='app__body'>
             <Sidebar />
             <Feed />
+            <Widgets/>
           </div>
         )}
     </div>

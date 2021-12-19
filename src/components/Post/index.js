@@ -1,14 +1,14 @@
-import React from 'react';
+import React,{forwardRef} from 'react';
 import './styles.css';
 import { Avatar } from '@material-ui/core';
 import {ThumbUpAltOutlined, ChatOutlined, ShareOutlined, SendOutlined } from '@material-ui/icons';
 import InputOptions from '../InputOptions';
 
-const Post = ({ name, description, message, photoUrl }) => {
+const Post = forwardRef(({ name, description, message, photoUrl }, ref) => {
     return (
-        <div className='post'>
+        <div ref={ref} className='post'>
             <div className='post__header'>
-                <Avatar />
+                <Avatar src={photoUrl}>{name[0]}</Avatar>
                 <div className='post__info'>
                     <h2>{name}</h2>
                     <p>{description}</p>
@@ -26,6 +26,6 @@ const Post = ({ name, description, message, photoUrl }) => {
             </div>
         </div>
     )
-}
+});
 
 export default Post;
