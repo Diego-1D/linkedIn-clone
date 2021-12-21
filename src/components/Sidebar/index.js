@@ -27,16 +27,16 @@ const Sidebar = () => {
             </div>
             <div className='sidebar__stats'>
                 <div className='sidebar__stat'>
-                    <p>Who visited you</p>
+                    <p>Conexões</p>
                     <p className='sidebar__statNumber'>1,523</p>
                 </div>
                 <div className='sidebar__stat'>
-                    <p>Views on post</p>
+                    <p>Quem viu seu perfil</p>
                     <p className='sidebar__statNumber'>2,719</p>
                 </div>
             </div>
             <div className='sidebar__bottom'>
-                <p>Recente</p>
+                <p>Recentes</p>
                 {recentItem('reactjs')}
                 {recentItem('programming')}
                 {recentItem('softwareengineering')}

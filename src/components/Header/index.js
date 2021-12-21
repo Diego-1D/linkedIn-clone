@@ -29,18 +29,18 @@ const Header = () => {
                 <img src='https://cdn-icons-png.flaticon.com/512/174/174857.png' />
                 <div className="header__search">
                     <SearchIcon />
-                    <input placeholder='Search' type="text" />
+                    <input placeholder='Pesquisar' type="text" />
                 </div>
             </div>
             <div className="header__right">
-                <HeaderOptions Icon={HomeIcon} title='Home' />
-                <HeaderOptions Icon={SupervisorAccountIcon} title='My Network' />
-                <HeaderOptions Icon={BusinessCenterIcon} title='Jobs' />
-                <HeaderOptions Icon={ChatIcon} title='Messaging' />
-                <HeaderOptions Icon={NotificationsIcon} title='Notifications' />
+                <HeaderOptions Icon={HomeIcon} title='Início' />
+                <HeaderOptions Icon={SupervisorAccountIcon} title='Minha rede' />
+                <HeaderOptions Icon={BusinessCenterIcon} title='Vagas' />
+                <HeaderOptions Icon={ChatIcon} title='Messagens' />
+                <HeaderOptions Icon={NotificationsIcon} title='Notificações' />
                 <HeaderOptions
                     avatar={true}
-                    title='me'
+                    title='Eu'
                     onClick={logoutOfApp}
                 />
             </div>

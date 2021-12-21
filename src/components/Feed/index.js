@@ -45,15 +45,19 @@ const Feed = () => {
                 <div className='feed__input'>
                     <Create />
                     <form>
-                        <input value={input} onChange={e => setInput(e.target.value)} type='text' />
+                        <input
+                            value={input} onChange={e => setInput(e.target.value)}
+                            type='text'
+                            placeholder='Começar publicação'
+                        />
                         <button onClick={sendPost} ontype='submit'>Send</button>
                     </form>
                 </div>
                 <div className='feed__inputOptions'>
-                    <InputOptions Icon={Image} title='Photo' color='#70B5F9' />
-                    <InputOptions Icon={Subscriptions} title='Video' color='#E7A33E' />
-                    <InputOptions Icon={EventNote} title='Event' color='#C0CBCD' />
-                    <InputOptions Icon={CalendarViewDay} title='Write article' color='#7FC15E' />
+                    <InputOptions Icon={Image} title='Foto' color='#70B5F9' />
+                    <InputOptions Icon={Subscriptions} title='Vídeo' color='#E7A33E' />
+                    <InputOptions Icon={EventNote} title='Evento' color='#C0CBCD' />
+                    <InputOptions Icon={CalendarViewDay} title='Escrever artigo' color='#7FC15E' />
                 </div>
             </div>
             <FlipMove>
