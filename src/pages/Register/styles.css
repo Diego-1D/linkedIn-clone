@@ -1,0 +1,86 @@
+.container{
+    height: 100vh;
+    background-color: #F3F2EF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    gap: 1.5rem;
+}
+
+.container > img {
+    height: 35px;
+}
+
+.container > p {
+   font-size: 32px;
+}
+
+.container__input{
+    width: 400px;
+    height: 450px;
+    background-color: #FFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.container__input > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__input > form > input {
+    width: 350px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.container__input > form > p {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 5px;
+
+}
+
+.term{
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+.term > span{
+    color: #0a66c2;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container__input > button {
+    width: 350px;   
+    height: 48px;
+    font-size: 16px;
+    font-weight: 550;
+    color: #fff;
+    background-color: #0a66c2;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.container__input > h3 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.login__resgiter {
+    font-size: 16px;
+    color: #0a66c2;
+    font-weight: 600;
+    cursor: pointer;
+}
