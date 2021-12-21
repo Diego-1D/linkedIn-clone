@@ -55,7 +55,7 @@
 
 .sidebar__stat > p {
     color: gray;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
 }
 
@@ -80,21 +80,21 @@
 
 .sidebar__recentItem {
     display: flex;
+    align-items: center;
     font-size: 13px;
     color: gray;
-    font-weight: bold;
     cursor: pointer;
     padding: 5px;
 }
 
 .sidebar__recentItem:hover{
     background-color: whitesmoke;
-    border-radius: 10px;
     cursor: pointer;
     color: black;
 }
 
 .sidebar__hash{
-    margin-left: 5px;
     margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }

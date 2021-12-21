@@ -8,6 +8,8 @@ import { auth } from './firebase';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Widgets from './components/Widgets';
+import Register from './pages/Register';
+import Log from './pages/Log';
 
 function App() {
 
@@ -31,9 +33,11 @@ function App() {
   }, []);
   return (
     <div className="app">
+      {/* <Register/> */}
+    
       <Header />
       {!user ?
-        <Login /> : (
+        <Log/> : (
           <div className='app__body'>
             <Sidebar />
             <Feed />

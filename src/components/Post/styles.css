@@ -29,5 +29,6 @@
 
 .post__buttons{
     display: flex;
-    justify-content: space-evenly;
+    width: 98%;
+    justify-content: space-between;
 }
