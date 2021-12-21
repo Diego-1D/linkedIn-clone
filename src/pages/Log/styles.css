@@ -1,0 +1,105 @@
+.container_login {
+    height: 100vh;
+    background-color: #F3F2EF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    gap: 1.5rem;
+}
+
+.container_login > img {
+    height: 28px;
+}
+
+
+.container__input__login{
+    width: 300px;
+    height: 400px;
+    background-color: #FFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 25px;
+    box-shadow: 2px 2px 3px 3px #cccbc7;
+}
+
+
+
+.container__input__login > h2 {
+   font-size: 32px;
+   font-weight: 500;
+}
+
+.container__input__login > p {
+    font-size: 14px;
+ }
+ 
+
+.container__input__login > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__input__login > form > input {
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.container__input__login > button {
+    width: 300px;   
+    height: 48px;
+    font-size: 16px;
+    font-weight: 550;
+    color: #fff;
+    background-color: #0a66c2;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.forgot_password{
+    color: #0177b7;
+    font-weight: bold;
+    cursor: pointer;
+    width: 150px;
+    height: 35px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.forgot_password:hover{
+    background-color: #c1f3ff;
+}
+
+.container_login > h3 {
+    font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resgiter {
+    font-size: 16px;
+    color: #0a66c2;
+    font-weight: 600;
+    width: 100px;
+    height: 35px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resgiter:hover{
+    background-color: #c1f3ff;
+}
