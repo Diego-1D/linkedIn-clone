@@ -61,6 +61,10 @@
     cursor: pointer;
 }
 
+.term > span:hover{
+    text-decoration: underline;
+}
+
 .container__input > button {
     width: 350px;   
     height: 48px;
@@ -71,6 +75,10 @@
     border-radius: 24px;
     border: none;
     cursor: pointer;
+}
+
+.container__input > button:hover {
+    background-color: #014385;
 }
 
 .container__input > h3 {

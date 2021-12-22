@@ -10,6 +10,7 @@ import Sidebar from './components/Sidebar';
 import Widgets from './components/Widgets';
 import Register from './pages/Register';
 import Log from './pages/Log';
+import Home from './pages/Home';
 
 function App() {
 
@@ -33,9 +34,9 @@ function App() {
   }, []);
   return (
     <div className="app">
+      <Home/>
       {/* <Register/> */}
-    
-      <Header />
+      {/* <Header />
       {!user ?
         <Log/> : (
           <div className='app__body'>
@@ -43,7 +44,7 @@ function App() {
             <Feed />
             <Widgets/>
           </div>
-        )}
+        )} */}
     </div>
   );
 }

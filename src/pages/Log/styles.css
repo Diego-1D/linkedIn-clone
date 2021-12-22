@@ -64,6 +64,10 @@
     border: none;
     cursor: pointer;
 }
+.container__input__login > button:hover{
+    background-color: #014385;
+}
+
 
 .forgot_password{
     color: #0177b7;
@@ -78,6 +82,7 @@
 }
 .forgot_password:hover{
     background-color: #c1f3ff;
+    text-decoration: underline;
 }
 
 .container_login > h3 {
@@ -102,4 +107,5 @@
 }
 .resgiter:hover{
     background-color: #c1f3ff;
+    text-decoration: underline;
 }
