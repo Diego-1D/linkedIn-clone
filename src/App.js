@@ -11,6 +11,8 @@ import Widgets from './components/Widgets';
 import Register from './pages/Register';
 import Log from './pages/Log';
 import Home from './pages/Home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Fee from './pages/Fee';
 
 function App() {
 
@@ -33,19 +35,17 @@ function App() {
     })
   }, []);
   return (
-    <div className="app">
-      <Home/>
-      {/* <Register/> */}
-      {/* <Header />
+    <BrowserRouter>
+      <Routes>
+        <Route exact path='/' element={<Home />} />
+        <Route path='/log' element={<Log />} />
+        <Route path='/register' element={<Register />} />
+      </Routes>
       {!user ?
-        <Log/> : (
-          <div className='app__body'>
-            <Sidebar />
-            <Feed />
-            <Widgets/>
-          </div>
-        )} */}
-    </div>
+        <Log /> : (
+          <Fee />
+        )}
+    </BrowserRouter>
   );
 }
 

@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './styles.css';
 import { auth } from '../../firebase';
 import { login } from '../../features/userSlice';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 
 const Register = () => {
@@ -72,7 +73,7 @@ const Register = () => {
 
                 <h3>Já se cadastrou no LinkedIn?{" "}
                     <span className='login__resgiter'>
-                        Entre
+                        <Link to='/log'>Entre</Link>
                     </span>
                 </h3>
 

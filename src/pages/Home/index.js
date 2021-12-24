@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../../components/Hero';
+import Suggestion from '../../components/Suggestion';
 import './styles.css';
 
 const Home = () => {
@@ -9,11 +10,15 @@ const Home = () => {
             <div className='nav_home'>
                 <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png' alt='' />
                 <div className='nav_home_right'>
-                        <h3>Cadastra-se agora</h3>
-                        <span>Entrar</span>
+                    <Link to='/register'><h3>Cadastra-se agora</h3></Link>
+                    <Link to='/log'> <span>Entrar</span></Link>
                 </div>
             </div>
-            <Hero/>
+            <Hero />
+            <Suggestion />
+            <div className='container_announce'>
+
+            </div>
         </div>
     )
 }

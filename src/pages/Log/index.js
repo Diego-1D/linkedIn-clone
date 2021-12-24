@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { login } from '../../features/userSlice';
 import { auth } from '../../firebase';
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 const Log = () => {
 
@@ -52,7 +53,7 @@ const Log = () => {
             </div>
             <h3>Novo no LinkedIn?{" "}
                 <span className='resgiter'>
-                    Cadastre-se
+                   <Link to='/register'>Cadastre-se</Link>
                 </span>
             </h3>
         </div>
