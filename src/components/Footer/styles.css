@@ -1,0 +1,41 @@
+.container_footer{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    background-color: #faf9f9;
+    justify-content: center;
+    align-items: center;
+}
+
+.area_footer {
+    width: 82%;
+    display: flex;
+}
+
+.area_footer > img {
+    height: 24px;
+}
+
+.list_area{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding-left: 10rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.list > h3 {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 16px;
+    font-weight: 600;  
+}
+.list_item{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    font-weight: 500;  
+}
