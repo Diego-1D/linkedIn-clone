@@ -53,3 +53,46 @@
 .nav_home_right > span:hover {
     background-color: #c1f3ff;
 }
+
+.container_announce{
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    background-color: #f1eae1;
+    justify-content: center;
+    align-items: center;
+}
+
+.area_announce {
+    width: 82%;
+    height: 72%;
+    display: flex;
+    align-items: center;
+}
+.area_announce > p {
+    width: 413px;
+    font-size: 40px;
+    font-weight: 400;
+    color: rgba(178, 64, 32, 1);
+    margin-right: 60px;
+}
+
+.area_announce > button {
+    background-color: transparent;
+    color: rgb(109, 108, 108);
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid rgb(109, 108, 108);
+    border-radius: 30px;
+    width: 200px;
+    height: 57px;
+    transition: 0.3s all ease;
+}
+
+.area_announce > button:hover {
+    background-color: rgb(207, 205, 205);
+    text-decoration: 2px underline;
+    transition: 0.3s all ease;
+}
+
