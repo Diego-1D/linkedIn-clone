@@ -36,13 +36,13 @@ function App() {
   }, []);
   return (
     <BrowserRouter>
-      <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route path='/log' element={<Log />} />
-        <Route path='/register' element={<Register />} />
-      </Routes>
       {!user ?
-        <Log /> : (
+          <Routes>
+            <Route exact path='/' element={<Home />} />
+            <Route path='/log' element={<Log />} />
+            <Route path='/register' element={<Register />} />
+          </Routes>
+        : (
           <Fee />
         )}
     </BrowserRouter>
