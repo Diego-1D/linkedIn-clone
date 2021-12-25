@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../../components/Footer';
 import Hero from '../../components/Hero';
+import Slider from '../../components/Slider';
 import Suggestion from '../../components/Suggestion';
 import './styles.css';
 
@@ -17,8 +19,13 @@ const Home = () => {
             <Hero />
             <Suggestion />
             <div className='container_announce'>
-
+                <div className='area_announce'>
+                    <p>Anuncie sua vaga e alcance milhões de pessoas</p>
+                    <button>Anuncie uma vaga</button>
+                </div>
             </div>
+            <Slider/>
+            <Footer/>
         </div>
     )
 }
