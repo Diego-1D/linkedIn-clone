@@ -4,7 +4,7 @@ import './styles.css';
 const Suggestion = () =>{
 
     return (
-        <div className='container_susggetion'>
+        <div className='container_suggetion'>
             <div className='info_area'>
                 <p>Encontre o emprego ou estágio certo para você</p>
                 <div className='suggestion_area'>
