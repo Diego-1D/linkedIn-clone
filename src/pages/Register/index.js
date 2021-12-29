@@ -38,7 +38,7 @@ const Register = () => {
 
     return (
         <div className='container'>
-            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png' alt='' />
+            <img src='https://cdn.worldvectorlogo.com/logos/linkedin-logo-2013-1.svg' alt='' />
             <p>Aproveite sua vida profissional ao máximo</p>
             <div className='container__input'>
                 <form>

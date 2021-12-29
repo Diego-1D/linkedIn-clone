@@ -30,7 +30,7 @@ const Log = () => {
 
     return (
         <div className='container_login'>
-            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png' alt='' />
+            <img src='https://cdn.worldvectorlogo.com/logos/linkedin-logo-2013-1.svg' alt='' />
             <div className='container__input__login'>
                 <h2>Entrar</h2>
                 <p>Acompanhe as novidades do seu mundo profissional</p>
