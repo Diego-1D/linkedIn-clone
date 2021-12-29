@@ -1,31 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Footer from '../../components/Footer';
+import Links from '../../components/Links';
 import Hero from '../../components/Hero';
 import Slider from '../../components/Slider';
 import Suggestion from '../../components/Suggestion';
 import './styles.css';
+import Footer from '../../components/Footer';
 
 const Home = () => {
     return (
         <div className='container_home'>
             <div className='nav_home'>
-                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png' alt='' />
+                <img src='https://cdn.worldvectorlogo.com/logos/linkedin-logo-2013-1.svg' alt='' />
                 <div className='nav_home_right'>
-                    <Link to='/register'><h3>Cadastra-se agora</h3></Link>
-                    <Link to='/log'> <span>Entrar</span></Link>
+                    <Link to='/register' className='h3'>Cadastra-se agora</Link>
+                    <Link to='/log' className='span'>Entrar</Link>
                 </div>
             </div>
-            <Hero />
+            {/* <Hero /> */}
             <Suggestion />
             <div className='container_announce'>
                 <div className='area_announce'>
-                    <p>Anuncie sua vaga e alcance milhões de pessoas</p>
+                    <p className='title_announce'>Anuncie sua vaga e alcance milhões de pessoas</p>
                     <button>Anuncie uma vaga</button>
                 </div>
             </div>
-            <Slider/>
-            <Footer/>
+            {/* <Slider/> */}
+            <Links />
+            <Footer />
         </div>
     )
 }
