@@ -68,6 +68,9 @@
 }
 
 @media (max-width: 769px){
+    .info_area{
+        padding: 18px;
+    }
     .info_area > p{ 
         font-size: 32px;
         font-weight: 400;
