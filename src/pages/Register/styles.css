@@ -1,5 +1,14 @@
-.container{
+.container_register{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_register{
+    width: 100%;
     height: 100vh;
+    min-height: 78vh;
     background-color: #F3F2EF;
     display: flex;
     flex-direction: column;
@@ -7,13 +16,13 @@
     padding-top: 1.5rem;
     gap: 1.5rem;
 }
-
-.container > img {
+.section_register > img {
     height: 35px;
 }
 
-.container > p {
+.section_register > p {
    font-size: 32px;
+   text-align: center;
 }
 
 .container__input{
@@ -91,4 +100,31 @@
     color: #0a66c2;
     font-weight: 600;
     cursor: pointer;
+}
+
+
+@media(max-width: 1161px){
+    .section_register{
+        background-color: #FFF;
+        height: auto;
+    }   
+    .container__input{
+        width: 600px;
+        height: 350px;
+    }
+    .container__input > form > input,  
+    .container__input > button  {
+        width: 568px;
+    }
+}
+
+@media(max-width: 615px){ 
+    .container__input{
+        width: 300px;
+        height: 380px;
+    }
+    .container__input > form > input,  
+    .container__input > button  {
+        width: 300px;
+    }
 }

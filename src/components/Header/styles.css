@@ -21,7 +21,7 @@
     padding: 10px;
     align-items: center;
     border-radius: 5px;
-    height: 16px;
+    height: 36px;
     width: 250px;
     color: gray;
     background-color: #EEF3F8;
@@ -41,5 +41,16 @@
 
 .header__right{
     display: flex;
+    align-items: center;
     padding-right: 7%;
+}
+
+@media(max-width: 890px){
+    .header__search{
+        display: none;
+    }
+}
+
+@media(max-width: 769px){
+  
 }

@@ -11,6 +11,7 @@
 }
 
 .headerOption__title{
+    display: block;
     font-size: 12px;
     font-weight: 400;
 }
@@ -19,4 +20,10 @@
     object-fit: contain;
     height: 25px !important;
     width: 25px !important;
+}
+
+@media(max-width: 769px){
+    .headerOption__title{
+        display: none;
+    }
 }

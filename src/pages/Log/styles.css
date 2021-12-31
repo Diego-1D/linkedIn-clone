@@ -1,14 +1,24 @@
 .container_login {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_login {
+    width: 100%;
     height: 100vh;
-    background-color: #F3F2EF;
+    background-color: #FFF;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 1.5rem;
     gap: 1.5rem;
 }
-
-.container_login > img {
+.img_login{
+    width: 90%;
+}
+.img_login > img {
     height: 28px;
 }
 
@@ -83,7 +93,7 @@
     text-decoration: underline;
 }
 
-.container_login > h3 {
+.section_login > h3 {
     font-size: 16px;
     font-weight: 300;
     display: flex;
@@ -106,4 +116,17 @@
 .resgiter:hover{
     background-color: #c1f3ff;
     text-decoration: underline;
+}
+
+@media(max-width: 769px){ 
+    .container__input__login{
+        box-shadow: none;
+    }
+    .container__input__login{
+        width: 330px;
+    }
+    .container__input__login > form > input,
+    .container__input__login > button{
+        width: 285px;
+    }
 }

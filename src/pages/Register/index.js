@@ -4,6 +4,7 @@ import { auth } from '../../firebase';
 import { login } from '../../features/userSlice';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import Footer from '../../components/Footer';
 
 
 const Register = () => {
@@ -37,47 +38,49 @@ const Register = () => {
 
 
     return (
-        <div className='container'>
-            <img src='https://cdn.worldvectorlogo.com/logos/linkedin-logo-2013-1.svg' alt='' />
-            <p>Aproveite sua vida profissional ao máximo</p>
-            <div className='container__input'>
-                <form>
-                    <p>Nome Completo</p>
-                    <input
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        type='text'
-                    />
+        <div className='container_register'>
+            <div className='section_register'>
+                <img src='https://cdn.worldvectorlogo.com/logos/linkedin-logo-2013-1.svg' alt='' />
+                <p>Aproveite sua vida profissional ao máximo</p>
+                <div className='container__input'>
+                    <form>
+                        <p>Nome Completo</p>
+                        <input
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            type='text'
+                        />
 
-                    <p>E-mail</p>
-                    <input
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        type='email'
-                    />
+                        <p>E-mail</p>
+                        <input
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            type='email'
+                        />
 
-                    <p>Senha (8 ou mais caracteres)</p>
-                    <input
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        type='password'
-                    />
-                </form>
-                <p className='term'>Ao clicar em Aceite e cadastre-se,
-                    você aceita o <span>Contrato do Usuário </span>,
-                    a <span>Política de Privacidade</span> e a
-                    <span>Política de Cookies</span> do LinkedIn.
-                </p>
+                        <p>Senha (8 ou mais caracteres)</p>
+                        <input
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            type='password'
+                        />
+                    </form>
+                    <p className='term'>Ao clicar em Aceite e cadastre-se,
+                        você aceita o <span>Contrato do Usuário </span>,
+                        a <span>Política de Privacidade</span> e a
+                        <span>Política de Cookies</span> do LinkedIn.
+                    </p>
 
-                <button type='submit' onClick={register}>Aceite e cadastre-se</button>
+                    <button type='submit' onClick={register}>Aceite e cadastre-se</button>
 
-                <h3>Já se cadastrou no LinkedIn?{" "}
-                    <span className='login__resgiter'>
-                        <Link to='/log'>Entre</Link>
-                    </span>
-                </h3>
-
+                    <h3>Já se cadastrou no LinkedIn?{" "}
+                        <span className='login__resgiter'>
+                            <Link to='/log'>Entre</Link>
+                        </span>
+                    </h3>
+                </div>
             </div>
+            <Footer />
         </div>
     )
 }
