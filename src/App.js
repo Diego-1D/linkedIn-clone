@@ -1,7 +1,5 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import './App.css';
-import Login from './components/Login';
 import { login, logout, selectUser } from './features/userSlice';
 import Feed from './components/Feed';
 import { auth } from './firebase';
@@ -36,16 +34,18 @@ function App() {
   }, []);
   return (
     <BrowserRouter>
-      {!user ?
+        {!user ?
           <Routes>
             <Route exact path='/' element={<Home />} />
             <Route path='/log' element={<Log />} />
             <Route path='/register' element={<Register />} />
           </Routes>
-        : (
-          <Fee />
-        )}
+          : (
+            <Fee />
+          )}
+  
     </BrowserRouter>
+   
   );
 }
 
