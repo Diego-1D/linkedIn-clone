@@ -16,3 +16,9 @@
     margin-left: 5px;
     font-size: 14px;
 }
+
+@media(max-width:579px){
+    .inputOption > h4 {
+       display: none;
+    }  
+}

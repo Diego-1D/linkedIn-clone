@@ -41,3 +41,20 @@
     display: flex;
     justify-content: space-between;
 }
+
+ 
+@media(max-width: 992px){
+    .feed{
+       flex: 0.7;
+    }
+} 
+
+@media(max-width:579px){
+    .feed{
+        margin: 0;
+    }
+    .feed__inputContainer{
+        border-radius: 0;
+    }
+
+}

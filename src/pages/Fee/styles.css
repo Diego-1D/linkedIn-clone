@@ -1,13 +1,28 @@
-.app {
+.container_feed {
+    width: 100%;
     background-color: #F3F2EF;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .app__body{
-    display: flex;
-    margin-top: 25px;
     width: 85%;
-  
+    display: flex;
+    justify-content: center;
+}
+
+
+@media(max-width: 769px){
+    .app__body{
+        flex-direction: column;
+        width: 85%;
+    }
+}
+
+@media(max-width:579px){
+    .app__body{
+        width: 100%;
+    }
 }
