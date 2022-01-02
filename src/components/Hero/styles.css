@@ -3,11 +3,13 @@
     height: auto;
     background-color: #FFF;
     display: flex;
+
 }
 .area_hero{
     width: 100%;
     display: flex;
     padding-left: 7.5rem;
+    align-items: center;
 }
 
 .hero_left{

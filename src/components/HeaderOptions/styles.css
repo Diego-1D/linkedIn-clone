@@ -1,6 +1,7 @@
 .headerOption{
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     margin-right: 30px;
     color: gray;
