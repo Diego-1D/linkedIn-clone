@@ -14,10 +14,10 @@ const Home = () => {
                 <img src='https://cdn.worldvectorlogo.com/logos/linkedin-logo-2013-1.svg' alt='' />
                 <div className='nav_home_right'>
                     <Link to='/register' className='h3'>Cadastra-se agora</Link>
-                    <Link to='/log' className='span'>Entrar</Link>
+                    <Link to='/login' className='span'>Entrar</Link>
                 </div>
             </div>
-            {/* <Hero /> */}
+            <Hero />
             <Suggestion />
             <div className='container_announce'>
                 <div className='area_announce'>
@@ -25,7 +25,7 @@ const Home = () => {
                     <button>Anuncie uma vaga</button>
                 </div>
             </div>
-            {/* <Slider/> */}
+            <Slider />
             <Links />
             <Footer />
         </div>

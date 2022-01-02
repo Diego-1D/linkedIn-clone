@@ -1,16 +1,12 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { login, logout, selectUser } from './features/userSlice';
-import Feed from './components/Feed';
 import { auth } from './firebase';
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import Widgets from './components/Widgets';
 import Register from './pages/Register';
-import Log from './pages/Log';
+import Login from './pages/Login';
 import Home from './pages/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Fee from './pages/Fee';
+import Feed from './pages/Feed';
 
 function App() {
 
@@ -32,20 +28,22 @@ function App() {
       }
     })
   }, []);
+
+
   return (
     <BrowserRouter>
-        {!user ?
-          <Routes>
-            <Route exact path='/' element={<Home />} />
-            <Route path='/log' element={<Log />} />
-            <Route path='/register' element={<Register />} />
-          </Routes>
-          : (
-            <Fee />
-          )}
-  
+
+      {!user ?
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
+        </Routes>
+        : (
+          <Feed />
+        )}
     </BrowserRouter>
-   
+
   );
 }
 

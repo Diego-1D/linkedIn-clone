@@ -74,9 +74,7 @@ const Register = () => {
                     <button type='submit' onClick={register}>Aceite e cadastre-se</button>
 
                     <h3>Já se cadastrou no LinkedIn?{" "}
-                        <span className='login__resgiter'>
-                            <Link to='/log'>Entre</Link>
-                        </span>
+                        <Link to='/login' className='login__resgiter'>Entre</Link>
                     </h3>
                 </div>
             </div>

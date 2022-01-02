@@ -35,6 +35,7 @@ const Slider = () => {
             setSliderIndex(sliderIndex < 2 ? sliderIndex + 1 : 0);
         }
     }
+    
 
     return (
         <div className='container_slide'>
@@ -50,15 +51,14 @@ const Slider = () => {
                     </div>
                 </div>
                 <div className='wrapper_slide'>
-                    <div className='slide'>
-                        <div className='info_container'>
-                            <h3>{slideItems[sliderIndex].title}</h3>
-                            <p>{slideItems[sliderIndex].desc}</p>
-                        </div>
-                        <div className='image_container'>
-                            <img src={slideItems[sliderIndex].img} alt='' />
-                        </div>
+                    <div className='info_container'>
+                        <h3>{slideItems[sliderIndex].title}</h3>
+                        <p>{slideItems[sliderIndex].desc}</p>
                     </div>
+                    <div className='image_container'>
+                        <img src={slideItems[sliderIndex].img} alt='' />
+                    </div>
+
                 </div>
             </div>
         </div >
