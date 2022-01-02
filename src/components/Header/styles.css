@@ -1,12 +1,11 @@
 .header {
-    position: sticky;
+    width: 100%;
     top: 0;
     display: flex;
     justify-content: space-between;
     background-color: #FFF;
     border-bottom: 0.1px solid lightgray;
     padding: 4px 0px;
-    width: 100%;
     z-index: 100;
 }
 
@@ -21,8 +20,8 @@
     padding: 10px;
     align-items: center;
     border-radius: 5px;
-    height: 36px;
-    width: 250px;
+    height: 34px;
+    width: 270px;
     color: gray;
     background-color: #EEF3F8;
 }
@@ -45,7 +44,13 @@
     padding-right: 7%;
 }
 
-@media(max-width: 890px){
+@media(max-width: 1024px){
+    .header {
+        justify-content: flex-start;
+    }
+    .header__left{
+        padding-right: 25px;
+    }
     .header__search{
         display: none;
     }
