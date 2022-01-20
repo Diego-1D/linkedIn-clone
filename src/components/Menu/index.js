@@ -2,7 +2,8 @@ import React from 'react';
 import './styles.css';
 import HeaderOptions from '../HeaderOptions';
 import { BusinessCenter, Chat, Notifications,SupervisorAccount, Home } from '@material-ui/icons';
-const Menu = () => {
+
+const Menu = ({logOut}) => {
     return (
         <div className='container_menu'>
               <HeaderOptions Icon={Home} title='Início' />
@@ -13,6 +14,7 @@ const Menu = () => {
                 <HeaderOptions
                     avatar={true}
                     title='Eu'
+                    onClick={logOut}
                 />
         </div>
     )

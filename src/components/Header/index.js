@@ -70,9 +70,8 @@ const Header = () => {
                 <HeaderOptions Icon={MoreHoriz} onClick={click} />
             </div>
             {active && (
-                <Menu />
+                <Menu logOut={logoutOfApp}/>
             )
-
             }
         </div>
     )
