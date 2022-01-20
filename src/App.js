@@ -35,7 +35,7 @@ function App() {
 
       {!user ?
         <Routes>
-          <Route exact path='/' element={<Home />} />
+          <Route exact path='/linkedIn-clone' element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
         </Routes>
