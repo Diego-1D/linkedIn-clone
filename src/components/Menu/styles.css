@@ -1,0 +1,20 @@
+.container_menu{
+    width: auto;
+    height: auto;
+    display: flex;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 6px 9px rgb(0 0 0 / 20%);
+    z-index: 999;
+    margin-top: 6.2rem;
+    padding: 1rem .5rem;
+    border-radius: 10px;
+    display: none;
+}
+
+@media(max-width: 769px){
+  .container_menu{
+      display: flex;
+  }
+}
