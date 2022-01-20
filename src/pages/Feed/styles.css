@@ -7,23 +7,22 @@
     align-items: center;
 }
 
-.app__body{
+.body_feed{
     width: 85%;
     display: flex;
     justify-content: center;
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 
 @media(max-width: 769px){
-    .app__body{
+    .body_feed{
         flex-direction: column;
-        width: 85%;
     }
 }
 
 @media(max-width:579px){
-    .app__body{
+    .body_feed{
         width: 100%;
     }
 }

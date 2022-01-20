@@ -1,4 +1,5 @@
 .header {
+    position: sticky;
     width: 100%;
     top: 0;
     display: flex;
@@ -43,7 +44,10 @@
     align-items: center;
     padding-right: 7%;
 }
-
+.button-menu{
+    display: none;
+    padding-right: 20px;
+}
 @media(max-width: 1024px){
     .header {
         justify-content: flex-start;
@@ -57,5 +61,14 @@
 }
 
 @media(max-width: 769px){
-  
+    .header {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__right{
+      display: none;
+  }
+  .button-menu{
+    display: block;
+}
 }

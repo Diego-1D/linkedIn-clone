@@ -120,8 +120,6 @@
 @media(max-width: 769px){ 
     .container__input__login{
         box-shadow: none;
-    }
-    .container__input__login{
         width: 400px;
     }
     .section_login > h3 {

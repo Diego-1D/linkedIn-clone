@@ -5,6 +5,7 @@ import { login } from '../../features/userSlice';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer';
+import Loading from '../../components/Loading';
 
 
 const Register = () => {
@@ -12,13 +13,15 @@ const Register = () => {
     const [name, setName] = useState("");
     const [password, setPassword] = useState("");
     const [email, setEmail] = useState("");
+    const [loading, setLoading] = useState(false);
     const dispatch = useDispatch();
 
-    const register = () => {
+    const register = async () => {
+        setLoading(true);
         if (!name) {
             return alert("Please enter a full name!")
         }
-        auth.createUserWithEmailAndPassword(email, password).then(
+       await auth.createUserWithEmailAndPassword(email, password).then(
             (userAuth) => {
                 userAuth.user
                     .updateProfile({
@@ -33,11 +36,15 @@ const Register = () => {
                         );
                     });
             })
-            .catch((error) => alert(error));
+            .catch((error) => alert(error)).finally(() => {
+                setLoading(false);
+            })
     };
 
 
-    return (
+    return(
+        loading ?
+        <Loading /> :
         <div className='container_register'>
             <div className='section_register'>
                 <img src='https://cdn.worldvectorlogo.com/logos/linkedin-logo-2013-1.svg' alt='' />
@@ -79,8 +86,8 @@ const Register = () => {
                 </div>
             </div>
             <Footer />
-        </div>
-    )
+        </div>)
+
 }
 
 export default Register;

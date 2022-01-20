@@ -9,7 +9,7 @@ import { selectUser } from '../../features/userSlice';
 import { useSelector } from 'react-redux';
 import FlipMove from 'react-flip-move';
 
-const Feed = () => {
+const Publication = () => {
     const user = useSelector(selectUser);
     const [input, setInput] = useState('');
     const [posts, setPosts] = useState([]);
@@ -28,7 +28,6 @@ const Feed = () => {
     }, [])
 
     const sendPost = (event) => {
-        //Pesquisar sobre essa função
         event.preventDefault();
         db.collection('posts').add({
             name: user.displayName,
@@ -37,12 +36,13 @@ const Feed = () => {
             photoUrl: user.photoUrl || '',
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         })
+        setInput('');
     }
 
     return (
-        <div className='feed'>
-            <div className='feed__inputContainer'>
-                <div className='feed__input'>
+        <div className='publication'>
+            <div className='publication__inputContainer'>
+                <div className='publication__input'>
                     <Create />
                     <form>
                         <input
@@ -53,7 +53,7 @@ const Feed = () => {
                         <button onClick={sendPost} ontype='submit'>Send</button>
                     </form>
                 </div>
-                <div className='feed__inputOptions'>
+                <div className='publication__inputOptions'>
                     <InputOptions Icon={Image} title='Foto' color='#70B5F9' />
                     <InputOptions Icon={Subscriptions} title='Vídeo' color='#E7A33E' />
                     <InputOptions Icon={EventNote} title='Evento' color='#C0CBCD' />
@@ -76,4 +76,4 @@ const Feed = () => {
     )
 }
 
-export default Feed
+export default Publication;

@@ -1,9 +1,9 @@
-.feed {
+.publication {
     flex: 0.5;
     margin: 0 20px;
 }
 
-.feed__inputContainer {
+.publication__inputContainer {
     background-color: white;
     padding: 10px;
     padding-bottom: 10px;
@@ -11,7 +11,7 @@
     margin-bottom: 20px;
 }
 
-.feed__input {
+.publication__input {
     border: 1px solid lightgray;
     border-radius: 30px;
     display: flex;
@@ -20,12 +20,12 @@
     padding-left: 15px;
 }
 
-.feed__input > form {
+.publication__input > form {
     display: flex;
     width: 100%;
 }
 
-.feed__input > form > input{
+.publication__input > form > input{
   flex: 1;
   border:none;
   margin-left: 10px;
@@ -33,27 +33,27 @@
   font-weight: 600;
 }
 
-.feed__input > form > button{
+.publication__input > form > button{
     display: none;
   }
 
-.feed__inputOptions{
+.publication__inputOptions{
     display: flex;
     justify-content: space-between;
 }
 
  
 @media(max-width: 992px){
-    .feed{
+    .publication{
        flex: 0.7;
     }
 } 
 
 @media(max-width:579px){
-    .feed{
+    .publication{
         margin: 0;
     }
-    .feed__inputContainer{
+    .publication__inputContainer{
         border-radius: 0;
     }
 

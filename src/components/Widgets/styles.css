@@ -1,12 +1,12 @@
 .widgets {
     position: sticky;
+    top: 80px;
     flex: 0.3;
     background-color: white;
     border-radius: 10px;
     border: 1px solid lightgray;
     height: fit-content;
     padding-bottom: 10px;
-    display: block;
 }
 
 .widgets__header {

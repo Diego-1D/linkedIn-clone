@@ -6,11 +6,11 @@ import Sidebar from '../../components/Sidebar';
 import Widgets from '../../components/Widgets';
 import './styles.css';
 
-const Fee = () => {
+const Feed = () => {
     return (
         <div className="container_feed">
             <Header />
-            <div className='app__body'>
+            <div className='body_feed'>
                 <Sidebar />
                 <Publication />
                 <Widgets />
@@ -19,4 +19,4 @@ const Fee = () => {
     )
 }
 
-export default Fee;
+export default Feed;

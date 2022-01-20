@@ -1,5 +1,6 @@
 .sidebar{
     position: sticky;
+    top: 80px;
     flex: 0.2;
     border-radius: 10px;
     text-align: center;
@@ -108,6 +109,9 @@
 }
 
 @media(max-width: 769px){
+    .sidebar{
+        position: static;
+    }
     .sidebar__top{
         border-bottom:  1px solid lightgray;
         padding-bottom: 20px;

@@ -35,7 +35,7 @@ const Slider = () => {
             setSliderIndex(sliderIndex < 2 ? sliderIndex + 1 : 0);
         }
     }
-    
+
 
     return (
         <div className='container_slide'>
@@ -50,14 +50,28 @@ const Slider = () => {
                         <ChevronRightOutlined />
                     </div>
                 </div>
-                <div className='wrapper_slide'>
-                    <div className='info_container'>
+                <div className='wrapper_slide' style={{transform:`translateX(${sliderIndex * -100}vw)`}}>
+                    {
+                        slideItems.map((item) => (
+                            <div className='slide'>
+                                <div className='info_container'>
+                                    <h3>{item.title}</h3>
+                                    <p>{item.desc}</p>
+                                </div>
+                                <div className='image_container'>
+                                    <img src={item.img} alt='' />
+                                </div>
+                            </div>
+                        ))
+                    }
+
+                    {/* <div className='info_container'>
                         <h3>{slideItems[sliderIndex].title}</h3>
                         <p>{slideItems[sliderIndex].desc}</p>
                     </div>
                     <div className='image_container'>
                         <img src={slideItems[sliderIndex].img} alt='' />
-                    </div>
+                    </div> */}
 
                 </div>
             </div>

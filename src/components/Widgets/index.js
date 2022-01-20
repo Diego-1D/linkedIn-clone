@@ -20,16 +20,28 @@ const Widgets = () => {
     return (
         <div className='widgets'>
             <div className='widgets__header'>
-                <h2>LinkedIn News</h2>
+                <h2>LinkedIn Notícias</h2>
                 <Info />
             </div>
-            {newsArticle("Little Mix", "Melhor banda do mundo!")}
-            {newsArticle("BLACKPINK", "Melhor banda do mundo!")}
-            {newsArticle("Demi Lovato", "Melhor banda do mundo!")}
-            {newsArticle("Jessie J", "Melhor banda do mundo!")}
-            {newsArticle("Lady Gaga", "Melhor banda do mundo!")}
+            {newsArticle("Covid-19: as últimas notícias sobre as va...", "Notícias mais lidas • 14.853 leitores")}
+            {newsArticle("iFood e Kroton se unem para formar um...", "há 16 h • 2.277 leitores")}
+            {newsArticle("Bilionários ficaram US$ 1 tri mais ricos e...", "há 7 h • 1.202 leitores")}
+            {newsArticle("Chuvas na Bahia deixam dezenas de mo...", "há 10 h • 1525 leitores")}
+            {newsArticle("Cobre ganha importância com onda sus...", "há 16 h • 222 leitores")}
         </div>
     )
 }
 
-export default Widgets
+export default Widgets;
+
+
+
+
+
+
+
+
+
+
+
+
