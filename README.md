@@ -1,7 +1,13 @@
 <h1 align="center">
-    <img src='https://cdn.worldvectorlogo.com/logos/linkedin-logo-2013-1.svg' width="300"/>
+    <img src='https://raw.githubusercontent.com/Diego-1D/linkedIn-clone/main/src/images/Git_Img.png' width="900"/>
 </h1>
-<p align="center">Clone do LinkedIn</p>
+
+<h4 align="center">
+    <img src='https://cdn.worldvectorlogo.com/logos/linkedin-logo-2013-1.svg' width="150"/>
+    <p>Clone do LinkedIn</p>
+</h4>
+
+
 
 ### 🛠 Tecnologias utilizadas
 
