@@ -13,12 +13,12 @@
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [React JS](https://pt-br.reactjs.org/)
-- [Firebase](https://firebase.google.com/?hl=pt)
-- [Redux](https://redux.js.org/)
-- [Material UI](https://mui.com/pt/)
+- React JS
+- Firebase
+- Redux
+- Material UI
 
 ### Autor
 Projeto feito por [PAPA](https://www.papareact.com/offers/nBK3v2ym/checkout).
 
-Adaptado com 💚 por Diego Fernandes 👋🏽 Entre em contato!
+Adaptado com 💚 por Diego Fernandes 👋🏽 [Entre em contato](https://www.linkedin.com/in/diego-fernandes-dev)
